@@ -1,0 +1,27 @@
+body{
+    background-image: url(fundo2.png);
+}
+
+
+
+form{
+text-align: center;
+margin-top: 200px;
+font-size: 30px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color-scheme: dark;
+
+
+
+}
+button{
+    color: goldenrod;
+    font-size: 20px;
+}
+label{
+    color: rgb(244, 178, 10);
+}div{
+    color: rgb(208, 49, 208);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

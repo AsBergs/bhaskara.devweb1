@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bhaskara</title>
+</head>
+<body>
+   
+ <form>
+<label for="inpValora">Valor A</label>
+<input type="number" id="inpValora">
+<label for="inpValorb">Valor B</label>
+<input type="number" id="inpValorb">
+<label for="inpValorc">Valor C</label>
+<input type="number" id="inpValorc">
+ </form>   
+
+<button onclick="calcula_bhaskara()">Calcule a Bhaskara</button>
+<div id="resultado"></div>
+<div id="resultado2"></div>
+
+<script>
+    
+function calcula_bhaskara() {
+    const valorA = document.getElementById("inpValora").value;
+    const valorB = document.getElementById("inpValorb").value;
+    const valorC = document.getElementById("inpValorc").value;
+    
+    const delta = Math.pow(valorB, 2) - 4*valorA*valorC;
+
+    const x_linha = (-valorB + Math.sqrt(delta))/2*valorA;
+    const x_duas_linha = (-valorB - Math.sqrt(delta))/2*valorA;
+    if(delta > 0){
+
+document.getElementById("resultado").innerHTML = `whatever ${x_linha}`;
+document.getElementById("resultado2").innerHTML = `whatever ${x_duas_linha}`;
+    }else{
+        document.getElementById("resultado").innerHTML = `Valor Inválido`;
+    }
+
+
+}
+    
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
